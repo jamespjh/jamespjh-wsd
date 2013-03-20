@@ -4,6 +4,7 @@ jamespjh-wsd
 Web sequence diagram command line tool
 
 Based on content from http://www.websequencediagrams.com/embedding.html
+
 With added ability to use your API key, and command line interface
 
 Setup:

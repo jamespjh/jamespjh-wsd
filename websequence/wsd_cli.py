@@ -4,8 +4,11 @@ import yaml
 import os
 import sys
 import argparse
-
-config=yaml.load(open(os.path.expanduser(os.path.join("~",".wsd",'config.yml'))))
+ 
+try:
+ config=yaml.load(open(os.path.expanduser(os.path.join("~",".wsd",'config.yml'))))
+except:
+ config={"key":None,"style":"qsd"}
 
 def getSequenceDiagram( text, outputFile, key=None, style = 'default' ):
     request = {}

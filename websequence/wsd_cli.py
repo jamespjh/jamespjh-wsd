@@ -14,7 +14,7 @@ def getSequenceDiagram( text, outputFile, key=None, style = 'default' ):
     request["apiVersion"] = "1"
     if key:
         request["apikey"]=key
-    print request
+
     url = urllib.urlencode(request)
 
     f = urllib.urlopen("http://www.websequencediagrams.com/", url)

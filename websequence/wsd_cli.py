@@ -20,7 +20,7 @@ def getSequenceDiagram( text, outputFile, key=None, style = 'default' ):
 
     url = urllib.urlencode(request)
 
-    f = urllib.urlopen("http://www.websequencediagrams.com/", url)
+    f = urllib.urlopen("http://www.websequencediagrams.com/index.php", url)
     line = f.readline()
     f.close()
     print line
